@@ -11,6 +11,33 @@
 <body>
     <div class="wrapper">
 
+        <!-- Шапка -->
+
+        <header class="header">
+            <h1>Шапка сайта</h1>
+            <a class="logo" href="/">
+                <img src="/assets/img/icons/logotype.svg" alt="Логотип компании ArtWeb">
+            </a>
+            <nav class="menu">
+                <h2>Навигация</h1>
+                <ul class="menu__list">
+                    <li>
+                        <a href="#">Услуги</a>
+                    </li>
+                    <li>
+                        <a href="#">Наши работы</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn-consultation">Консультация</button>
+        </header>
+
         <!-- Главный экран -->
 
         <hgroup>
@@ -125,7 +152,7 @@
         <!-- Отзывы -->
 
         <section class="reviews">
-            <h2 class="h2">Отзывы о нашей работе</h2>
+            <h2 class="h2">Отзывы клиентов о нашей работе</h2>
             
         </section>
 
@@ -155,8 +182,9 @@
                     <p class="sub-title">Мы рассмотрим Ваше обращение и свяжемся с Вами удобным для Вас способом.</p>
                 </hgroup>
                 
-                <form action="#">
-
+                <form class="form" action="#">
+                    <input class="form__input" type="text" name="name" placeholder="Имя">
+                    <input type="submit" value="Отправить">
                 </form>
                 
            </section>
