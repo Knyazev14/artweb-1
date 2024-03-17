@@ -1,0 +1,128 @@
+.services {
+    margin-bottom: 12.267vw;
+
+    @media(min-width:768px) {
+        margin-bottom: 12.891vw;
+    }
+
+    @media(min-width:1340px) {
+        margin-bottom: 11.771vw;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__left {}
+
+    &__left hgroup {
+        margin-bottom: 80px;
+    }
+
+    &__left .h2{
+        margin-bottom: 20px;
+    }
+
+    &__arrow-wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__arrow {
+        width: 170px;
+        height: 47px;
+        transform: rotate(90deg);
+        margin-bottom: 60px;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__card {
+        background: $colorWhite;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 12px 14px 0px rgba(0, 0, 0, 0.15);
+        position: relative;
+    }
+
+    &__card-top {
+        margin-bottom: 30px;
+    }
+
+    &__card-top .h3 {
+        position: relative;
+        transition: all 0.2s ease;
+    }
+
+    &__card-top .h3::before {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(117deg, #3CA0D2 11.27%, #48DCA6 67.35%);
+        transition: all 0.2s ease;
+    }
+
+    &__card-img {
+        width: 60px;
+        margin-bottom: 15px;
+    }
+
+    &__card-link {
+        position: relative;
+        z-index: 1;
+    }
+
+    //Анимация при наведении
+    &__card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(117deg, #3CA0D2 11.27%, #48DCA6 67.35%);
+        opacity: 0;
+        border-radius: 20px;
+        transition: all 0.2s ease;
+    }
+
+    & .text {
+        transition: all 0.2s ease;
+    }
+
+    &__card:hover::before {
+        @media(any-hover: hover) {
+            opacity: 1;
+        }
+    }
+
+    &__card:hover .h3::before {
+        @media(any-hover: hover) {
+            background: $colorWhite;
+        }
+
+    }
+
+    &__card:hover .h3 {
+        @media(any-hover: hover) {
+            color: $colorWhite;
+        }
+
+    }
+
+    &__card:hover .text {
+        @media(any-hover: hover) {
+            color: $colorWhite;
+        }
+
+    }
+}

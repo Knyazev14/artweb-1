@@ -1,0 +1,20 @@
+.header {
+background: $colorWhite;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 9999;
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 24vw;
+        @media(min-width:768px){
+            height: 12.37vw;
+        }
+        @media(min-width:1340px){
+            height: 5.208vw;
+        }
+    }
+}

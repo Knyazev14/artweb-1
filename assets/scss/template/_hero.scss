@@ -1,0 +1,88 @@
+.hero {
+    margin-bottom: 25.067vw;
+    min-height: 160vw;
+    @media(min-width:768px) {
+        margin-bottom: 18.75vw;
+        min-height: 98.698vw;
+    }
+    @media(min-width:1340px) {
+        margin-bottom: 10.5vw;
+        min-height: 44.531vw;
+    }
+    &__body {
+        position: relative;
+        z-index: 1;
+    }
+    &__wrapper {
+        position: relative;
+    }
+    &__wrapper::before{
+        position: absolute;
+        content: "";
+        width: 100%;
+        min-height: 160vw;
+        border-radius: 8vw;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url('/assets/image/icons/main-bg-2.png');
+        @media(min-width:768px){
+            min-height: 98.698vw;
+            border-radius: 3.906vw;      
+        }
+        @media(min-width:1340px) {
+            min-height: 44.531vw;
+            border-radius: 1.563vw;
+        }
+    }
+
+    &__body hgroup{
+        display: flex;
+        flex-direction: column;
+        gap: 8vw;
+        padding: 16vw 4vw 0vw 6.667vw;
+        @media(min-width:768px){
+            gap: 6.51vw;
+            max-width: 114.583vw;
+            padding: 7.813vw 1.953vw 0vw 3.255vw;
+        }
+        @media(min-width:1340px){
+            max-width: 45.833vw;
+            gap: 3.646vw;
+            padding: 7.865vw 0.104vw 0vw 3.906vw; 
+        }
+    }
+
+    &__title{
+        color: $colorWhite;
+    }
+
+    &__text {
+        color: $colorWhite;
+        font-size: 4.533vw;
+        @media(min-width:768px){
+            font-size: 2.604vw;
+        }
+        @media(min-width:1340px){
+            font-size: 1.302vw;
+      }
+    }
+
+    &__img{
+        position: absolute;
+        width: 106.667vw;
+        left: -5.867vw;
+        top: 102.133vw;
+        @media(min-width:768px){
+            width: 106.771vw;
+            left: -6.25vw;
+            top: 45.313vw;        
+        }
+        @media(min-width:1340px){
+            width: 65.052vw;
+            top: 12.188vw;
+            left: 31.458vw;        
+            }
+        
+    }
+}
